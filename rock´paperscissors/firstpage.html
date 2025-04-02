@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>The Game</title>
+</head>
+<body class="secondBody">
+    <audio autoplay loop>
+        <source src="\Game_Paper_Stone\SoundsOrder\mixkit-serene-view-443.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="grid-container">
+        <div class="musicBox">
+            <a href="firstPage.html"><button>Back to main Page</button></a>
+            <h2>Music</h2>
+            <button type="reset" class="on"> On</button>
+            <button type="reset" class="off"> Off</button>
+        </div>
+        <div class="grid-item1"><h1>Paper-Stone-Scissors-Game</h1></div>
+        <div class="scoreItem">
+            <p>Your Score</p>
+            <h3 class="winScore"> Wins: 0</h3>
+            <h3 class="drawScore">Draws: 0</h3>
+            <h3 class="loseScore">Loses: 0</h3>
+            <button class="resetButton" onclick="setToNull()">Reset</button>
+            
+        </div>
+        <div class="grid-item2"><button onclick="userChoseScissors()" class="button1">Scissors</button></div>
+        <div class="grid-item3"><button onclick="userChoseRock()" class="button2">Rock</button></div>
+        <div class="grid-item4"><button onclick="userChosePaper()" class="button3">Paper</button></div>
+        <div class="grid-item5"><h1 class="resultOfGame">Result</h1></div>
+        <div class="grid-item6"><h2 class="chosen">Computer has chosen: </h2></div>
+
+    </div>
+
+    
+    
+
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
